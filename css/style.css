@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+  grid-gap: 15px;
+}
+.card {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #b5a8ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
